@@ -1,0 +1,156 @@
+/* General Reset */
+body, h1, h2, h3, p, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #d44747;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+/* Section Styles */
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Services Section */
+.services div {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.services div div {
+    flex: 1 1 calc(30% - 20px);
+    margin: 10px;
+    background: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Portfolio Section */
+.portfolio div {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.portfolio div div {
+    flex: 1 1 calc(30% - 20px);
+    background: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.portfolio img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+/* About Section */
+.about p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Contact Section */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button {
+    background: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #45a049;
+}
+
+/* Footer */
+footer {
+    background: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
