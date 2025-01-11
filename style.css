@@ -14,8 +14,8 @@ body {
 
 /* Header Styles */
 header {
-    background-color: #1a1a1a;
-    color: white;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
     text-align: center;
     padding: 20px 0;
 }
@@ -31,7 +31,7 @@ header p {
 }
 
 header nav a {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     margin: 0 15px;
     font-weight: bold;
@@ -45,7 +45,7 @@ header nav a:hover {
 /* Hero Section */
 .hero {
     background-color: #d44747;
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: center;
     padding: 50px 20px;
 }
@@ -153,4 +153,22 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
+}
+.hero {
+    background-image: url("https://media.istockphoto.com/id/1443951028/video/clean-soft-and-shiny-background-animation-abstract-simple-shapes-beautiful-blurred-motion.jpg?s=640x640&k=20&c=QM3uilU9dpgkXXzJ8cNl943-4Bmw3TpqWJmUUW7PHuc=");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 50px 0;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.5rem;
 }
