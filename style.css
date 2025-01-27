@@ -184,7 +184,6 @@ footer {
         align-items: center;
         z-index: 1000;
     }
-
     .popup-content {
         background: #fff;
         padding: 20px;
@@ -192,7 +191,6 @@ footer {
         text-align: center;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
-
     .popup-content button {
         margin-top: 10px;
         padding: 10px 20px;
@@ -202,7 +200,6 @@ footer {
         border-radius: 5px;
         cursor: pointer;
     }
-
     .popup-content button:hover {
         background: #0056b3;
     }
