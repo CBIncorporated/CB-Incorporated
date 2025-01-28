@@ -24,8 +24,10 @@
 
     <!-- Hero Section -->
     <div class="hero">
-        <h1>Welcome to CB Incorporated</h1>
-        <p>Your Vision, Our Design</p>
+        <div class="hero-content">
+            <h1>Welcome to CB Incorporated</h1>
+            <p>Your Vision, Our Design</p>
+        </div>
     </div>
 
     <!-- About Section -->
@@ -58,18 +60,22 @@
         <p>Our management team consists of members with diverse skills, all experts in their chosen fields.</p>
         <div class="team-container">
             <div class="team-member">
+                <img src="team-member1.jpg" alt="Caleb B">
                 <h4>Caleb B - Director</h4>
                 <p>Caleb, our founder, created the company in mid-2023 as a graphic design firm. He is our lead website developer and is currently studying Computer Science.</p>
             </div>
             <div class="team-member">
+                <img src="team-member2.jpg" alt="Mick L">
                 <h4>Mick L - Management</h4>
                 <p>Mick joined our team in 2023 and has become an integral part of our operations. He ensures that our staff is happy and up to our standards.</p>
             </div>
             <div class="team-member">
+                <img src="team-member3.jpg" alt="Nathan J">
                 <h4>Nathan J - Management [Creative Development Lead]</h4>
                 <p>Nathan, our Creative Development Lead, is an expert in graphic design and is responsible for overseeing all graphic and media designs. He is also our Designated Safety Officer.</p>
             </div>
             <div class="team-member">
+                <img src="team-member4.jpg" alt="Alfie M">
                 <h4>Alfie M - Customer Services Team Lead</h4>
                 <p>Alfie, our Customer Services Lead, recently joined the team. He brings extensive experience in Human Resources and community management, ensuring professional standards are met.</p>
             </div>
@@ -101,9 +107,15 @@
         <h2>Contact Us</h2>
         <form name="contact" method="POST" data-netlify="true">
             <input type="hidden" name="form-name" value="contact" />
-            <input type="text" name="name" placeholder="Your Name" required />
-            <input type="email" name="email" placeholder="Your Email" required />
-            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" placeholder="Your Email" required />
+            </div>
+            <div class="form-group">
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            </div>
             <button type="submit">Send message</button>
         </form>
     </section>
