@@ -62,7 +62,7 @@ header nav a:hover {
 }
 
 /* About Section */
-.about {
+.about, .services, .ourteam, .vacancies, .contact {
     background-color: white;
     padding: 40px;
     margin: 30px 10%;
@@ -70,11 +70,13 @@ header nav a:hover {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
-.about h2 {
+/* Heading styles for About, Services, Team, Vacancies, Contact */
+h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
 }
 
+/* About Section */
 .about p {
     font-size: 1.2em;
     line-height: 1.6;
@@ -82,28 +84,6 @@ header nav a:hover {
 }
 
 /* Services Section */
-.services {
-    background-color: #fff;
-    padding: 40px;
-    margin: 30px 10%;
-    border-radius: 8px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-}
-
-.services h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-.services p2 {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-}
-
-.services div {
-    margin-top: 20px;
-}
-
 .services h3 {
     font-size: 1.8em;
     margin-bottom: 10px;
@@ -117,22 +97,29 @@ header nav a:hover {
 
 /* Team Section */
 .ourteam {
-   background-color: white;
-    padding: 40px;
-    margin: 30px 10%;
-    border-radius: 8px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
-.ourteam h2 {
-    font-size: 2.5em;
+.team-member {
+    flex: 1 1 calc(25% - 20px); /* 4 items per row */
+    max-width: 250px;
+    text-align: center;
     margin-bottom: 20px;
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 15px;
 }
 
 .ourteam h4 {
     font-size: 1.6em;
-    margin-top: 20px;
     color: #333;
+    margin-top: 15px;
 }
 
 .ourteam p {
@@ -141,19 +128,6 @@ header nav a:hover {
 }
 
 /* Vacancies Section */
-.vacancies {
-    background-color: white;
-    padding: 40px;
-    margin: 30px 10%;
-    border-radius: 8px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-}
-
-.vacancies h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
 .vacancies a {
     font-size: 1.2em;
     color: #ff5c57;
@@ -165,19 +139,6 @@ header nav a:hover {
 }
 
 /* Contact Section */
-.contact {
-    background-color: #fff;
-    padding: 40px;
-    margin: 30px 10%;
-    border-radius: 8px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-}
-
-.contact h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
 .contact form {
     display: flex;
     flex-direction: column;
@@ -253,6 +214,11 @@ footer {
 
     .services h3 {
         font-size: 1.5em;
+    }
+
+    .team-member {
+        flex: 1 1 100%; /* Stack members on mobile */
+        max-width: 100%;
     }
 
     .contact input,
