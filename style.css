@@ -48,7 +48,7 @@ header nav a:hover {
     background-color: #ff5c57;
     color: white;
     text-align: center;
-    height: 100vh; /* Full viewport height */
+    height: 50vh; /* Adjusted height */
     display: flex;
     justify-content: center;
     align-items: center;
