@@ -43,6 +43,31 @@ header nav a:hover {
     text-decoration: underline;
 }
 
+/* Hero Section */
+.hero {
+    background-color: #ff5c57;
+    color: white;
+    text-align: center;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3.5em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
 /* Section Styling */
 section {
     background-color: white;
@@ -96,6 +121,58 @@ p {
     color: #555;
 }
 
+/* Contact Form */
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.contact .form-group input,
+.contact .form-group textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 15px;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+}
+
+.contact .form-group input:focus,
+.contact .form-group textarea:focus {
+    border-color: #ff5c57;
+    outline: none;
+}
+
+.contact button {
+    padding: 15px;
+    font-size: 1.2em;
+    background-color: #ff5c57;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 500px;
+}
+
+.contact button:hover {
+    background-color: #e14e47;
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     header h1 {
@@ -104,6 +181,10 @@ p {
 
     .hero h1 {
         font-size: 2.5em;
+    }
+
+    .hero p {
+        font-size: 1.2em;
     }
 
     section {
@@ -115,8 +196,8 @@ p {
         grid-template-columns: 1fr;
     }
 
-    .contact input,
-    .contact textarea {
+    .contact .form-group input,
+    .contact .form-group textarea {
         font-size: 1.1em;
     }
 
