@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CB Incorporated | Graphic & Website Design</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-
-<body>
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<body class="bg-dark text-white">
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black py-3 shadow">
         <div class="container">
-            <a class="navbar-brand" href="#">CB Incorporated</a>
+            <a class="navbar-brand fw-bold" href="#">CB Incorporated</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -29,89 +27,46 @@
             </div>
         </div>
     </nav>
-
+    
     <!-- Hero Section -->
-    <section class="bg-danger text-white text-center py-5">
-        <div class="container">
-            <h1 class="display-4">Welcome to CB Incorporated</h1>
-            <p class="lead">Your Vision, Our Design</p>
+    <section class="hero text-center d-flex align-items-center justify-content-center text-white py-5" style="background: linear-gradient(to right, #ff416c, #ff4b2b); height: 60vh;">
+        <div>
+            <h1 class="display-3 fw-bold">Your Vision, Our Design</h1>
+            <p class="lead">Bringing your ideas to life with precision & creativity.</p>
+            <a href="#contact" class="btn btn-light btn-lg mt-3">Get in Touch</a>
         </div>
     </section>
-
-    <!-- About Section -->
-    <section id="about" class="container py-5">
-        <h2>About Us</h2>
-        <p>Founded in 2023, CB Incorporated specializes in creating visually stunning designs and functional websites.</p>
-    </section>
-
+    
     <!-- Services Section -->
-    <section id="services" class="bg-light py-5">
-        <div class="container">
-            <h2 class="text-center">Our Services</h2>
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <h3>Graphic Design</h3>
-                    <p>Logos, branding, and marketing materials.</p>
-                </div>
-                <div class="col-md-4">
-                    <h3>Website Design</h3>
-                    <p>Modern, responsive websites.</p>
-                </div>
-                <div class="col-md-4">
-                    <h3>Consulting Services</h3>
-                    <p>Expert advice for brand alignment.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Team Section -->
-    <section id="our-team" class="container py-5">
-        <h2 class="text-center">Our Management Team</h2>
+    <section id="services" class="container py-5">
+        <h2 class="text-center mb-4">Our Services</h2>
         <div class="row text-center">
-            <div class="col-md-3">
-                <h4>Caleb B - Director</h4>
-                <p>Lead website developer and founder.</p>
+            <div class="col-md-4">
+                <div class="card bg-secondary text-white border-0 shadow p-4">
+                    <h3>Graphic Design</h3>
+                    <p>Logos, branding, and marketing materials tailored to your needs.</p>
+                </div>
             </div>
-            <div class="col-md-3">
-                <h4>Mick L - Management</h4>
-                <p>Operations and staff management.</p>
+            <div class="col-md-4">
+                <div class="card bg-secondary text-white border-0 shadow p-4">
+                    <h3>Website Design</h3>
+                    <p>Modern, responsive websites that bring your ideas to life.</p>
+                </div>
             </div>
-            <div class="col-md-3">
-                <h4>Nathan J - Creative Lead</h4>
-                <p>Expert in graphic and media design.</p>
-            </div>
-            <div class="col-md-3">
-                <h4>Alfie M - Customer Services Lead</h4>
-                <p>Human Resources and community management.</p>
+            <div class="col-md-4">
+                <div class="card bg-secondary text-white border-0 shadow p-4">
+                    <h3>Consulting Services</h3>
+                    <p>Expert advice to align your brand and online presence.</p>
+                </div>
             </div>
         </div>
     </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="container py-5">
-        <h2>Contact Us</h2>
-        <form name="contact" method="POST" data-netlify="true" class="w-50 mx-auto">
-            <div class="mb-3">
-                <input type="text" name="name" class="form-control" placeholder="Your Name" required>
-            </div>
-            <div class="mb-3">
-                <input type="email" name="email" class="form-control" placeholder="Your Email" required>
-            </div>
-            <div class="mb-3">
-                <textarea name="message" class="form-control" placeholder="Your Message" rows="5" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-danger w-100">Send Message</button>
-        </form>
-    </section>
-
+    
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
+    <footer class="text-center bg-black py-4 mt-5">
         <p>&copy; 2023 CB Incorporated. All rights reserved.</p>
     </footer>
-
-    <!-- Bootstrap JS -->
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
