@@ -1,6 +1,8 @@
 /* General Styles */
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: white;
 }
 
 /* Navbar Styling */
@@ -21,6 +23,11 @@ body {
 /* Hero Section */
 .hero {
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero .btn {
@@ -35,10 +42,17 @@ body {
     color: white;
 }
 
+/* Sections */
+section {
+    padding: 60px 0;
+}
+
 /* Services Section */
 .card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-radius: 10px;
+    background-color: #222;
+    color: white;
 }
 
 .card:hover {
@@ -46,9 +60,64 @@ body {
     box-shadow: 0 8px 20px rgba(255, 75, 43, 0.2);
 }
 
+/* Team Section */
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.team-member {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255, 75, 43, 0.1);
+}
+
+/* Contact Form */
+.contact form {
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact .form-group input,
+.contact .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+}
+
+.contact .form-group input:focus,
+.contact .form-group textarea:focus {
+    border-color: #ff5c57;
+    outline: none;
+}
+
+.contact button {
+    padding: 12px;
+    font-size: 1.2em;
+    background-color: #ff5c57;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.contact button:hover {
+    background-color: #e14e47;
+}
+
 /* Footer */
-footer p {
-    margin: 0;
-    font-size: 1rem;
-    color: #bbb;
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 15px;
 }
