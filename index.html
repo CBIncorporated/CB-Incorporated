@@ -5,121 +5,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CB Incorporated | Graphic & Website Design</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- Header Section -->
-    <header>
-        <h1>CB Incorporated</h1>
-        <p>Graphic & Website Design - Est. 2023</p>
-        <nav>
-            <a href="#about">About Us</a>
-            <a href="#services">Services</a>
-            <a href="#our-team">Our Team</a>
-            <a href="#vacancies">Vacancies</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">CB Incorporated</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#our-team">Our Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#vacancies">Vacancies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <!-- Hero Section -->
-    <div class="hero">
-        <div class="hero-content">
-            <h1>Welcome to CB Incorporated</h1>
-            <p>Your Vision, Our Design</p>
+    <section class="bg-danger text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4">Welcome to CB Incorporated</h1>
+            <p class="lead">Your Vision, Our Design</p>
         </div>
-    </div>
+    </section>
 
     <!-- About Section -->
-    <section class="about" id="about">
+    <section id="about" class="container py-5">
         <h2>About Us</h2>
-        <p>Founded in 2023, CB Incorporated specializes in creating visually stunning designs and functional websites that exceed expectations. Our team is dedicated to bringing your vision to life with creativity and precision. We offer a range of custom options to make your website unique to you. Interested? Contact us to inquire today!</p>
+        <p>Founded in 2023, CB Incorporated specializes in creating visually stunning designs and functional websites.</p>
     </section>
 
     <!-- Services Section -->
-    <section class="services" id="services">
-        <h2>Our Services</h2>
-        <p>What do we offer? Here at CB Incorporated, we provide a range of services at affordable prices, ensuring that everyone can have access to professional designs. We are always up for a challenge and will tackle any project head-on!</p>
-        <div>
-            <h3>Graphic Design</h3>
-            <p>Logos, branding, and marketing materials tailored to your needs.</p>
-        </div>
-        <div>
-            <h3>Custom Website Design</h3>
-            <p>Modern, responsive websites that bring your ideas to life.</p>
-        </div>
-        <div>
-            <h3>Consulting Services</h3>
-            <p>Expert advice to align your brand and online presence.</p>
+    <section id="services" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center">Our Services</h2>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <h3>Graphic Design</h3>
+                    <p>Logos, branding, and marketing materials.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Website Design</h3>
+                    <p>Modern, responsive websites.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Consulting Services</h3>
+                    <p>Expert advice for brand alignment.</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Team Section -->
-    <section class="ourteam" id="our-team">
-        <h2>Our Management Team</h2>
-        <p>Our management team consists of members with diverse skills, all experts in their chosen fields.</p>
-        <div class="team-container">
-            <div class="team-member">
+    <section id="our-team" class="container py-5">
+        <h2 class="text-center">Our Management Team</h2>
+        <div class="row text-center">
+            <div class="col-md-3">
                 <h4>Caleb B - Director</h4>
-                <p>Caleb, our founder, created the company in mid-2023 as a graphic design firm. He is our lead website developer and is currently studying Computer Science.</p>
+                <p>Lead website developer and founder.</p>
             </div>
-            <div class="team-member">
+            <div class="col-md-3">
                 <h4>Mick L - Management</h4>
-                <p>Mick joined our team in 2023 and has become an integral part of our operations. He ensures that our staff is happy and up to our standards.</p>
+                <p>Operations and staff management.</p>
             </div>
-            <div class="team-member">
-                <h4>Nathan J - Management [Creative Development Lead]</h4>
-                <p>Nathan, our Creative Development Lead, is an expert in graphic design and is responsible for overseeing all graphic and media designs. He is also our Designated Safety Officer.</p>
+            <div class="col-md-3">
+                <h4>Nathan J - Creative Lead</h4>
+                <p>Expert in graphic and media design.</p>
             </div>
-            <div class="team-member">
-                <h4>Alfie M - Customer Services Team Lead</h4>
-                <p>Alfie, our Customer Services Lead, recently joined the team. He brings extensive experience in Human Resources and community management, ensuring professional standards are met.</p>
-            </div>
-            <!-- Vacant Positions -->
-            <div class="team-member">
-                <h4>VACANT - Management [Corporate Services Lead]</h4>
-                <p>Position currently vacant.</p>
-            </div>
-            <div class="team-member">
-                <h4>VACANT - Design and Development Team Lead</h4>
-                <p>Position currently vacant.</p>
-            </div>
-            <div class="team-member">
-                <h4>VACANT - Marketing Officer</h4>
-                <p>Position currently vacant.</p>
+            <div class="col-md-3">
+                <h4>Alfie M - Customer Services Lead</h4>
+                <p>Human Resources and community management.</p>
             </div>
         </div>
     </section>
 
-    <!-- Vacancies Section -->
-    <section class="vacancies" id="vacancies">
-        <h2>Vacancies</h2>
-        <p>To see our current vacancies, head to our Discord:</p>
-        <a href="https://discord.gg/X7dvH5RqCK" target="_blank">Our Discord</a>
-    </section>
-
     <!-- Contact Section -->
-    <section class="contact" id="contact">
+    <section id="contact" class="container py-5">
         <h2>Contact Us</h2>
-        <form name="contact" method="POST" data-netlify="true">
-            <input type="hidden" name="form-name" value="contact" />
-            <div class="form-group">
-                <input type="text" name="name" placeholder="Your Name" required />
+        <form name="contact" method="POST" data-netlify="true" class="w-50 mx-auto">
+            <div class="mb-3">
+                <input type="text" name="name" class="form-control" placeholder="Your Name" required>
             </div>
-            <div class="form-group">
-                <input type="email" name="email" placeholder="Your Email" required />
+            <div class="mb-3">
+                <input type="email" name="email" class="form-control" placeholder="Your Email" required>
             </div>
-            <div class="form-group">
-                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <div class="mb-3">
+                <textarea name="message" class="form-control" placeholder="Your Message" rows="5" required></textarea>
             </div>
-            <button type="submit">Send message</button>
+            <button type="submit" class="btn btn-danger w-100">Send Message</button>
         </form>
     </section>
 
-    <!-- Footer Section -->
-    <footer>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2023 CB Incorporated. All rights reserved.</p>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
