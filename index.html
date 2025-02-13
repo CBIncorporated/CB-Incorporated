@@ -11,7 +11,10 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">CB Incorporated</a>
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="CB_INC_NEW.webp" alt="CB Incorporated Logo" class="logo">
+                <span class="ms-2">CB Incorporated</span>
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -21,11 +24,15 @@
                     <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="#our-team">Our Team</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#staff-portal">Staff Portal</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-<marquee>🔥 LIMITED-TIME OFFER: Up to 50% OFF for ALL PARTNERS! 🔥| CB Inc: 🎨 Stunning Designs 🌐 Modern Websites 💼 Affordable Pricing </marquee>
+
+    <!-- Marquee -->
+    <marquee>🔥 LIMITED-TIME OFFER: Up to 50% OFF for ALL PARTNERS! 🔥 | CB Inc: 🎨 Stunning Designs 🌐 Modern Websites 💼 Affordable Pricing </marquee>
+
     <!-- Hero Section -->
     <section class="hero text-center text-white d-flex align-items-center justify-content-center">
         <div class="container">
@@ -37,14 +44,7 @@
     <!-- About Section -->
     <section class="container text-center my-5" id="about">
         <h2>About Us</h2>
-        <p>Founded in 2023, CB Incorporated is a creative studio specializing in delivering visually stunning graphic designs and smooth, modern websites. Our goal is to combine creativity with the latest technology to provide custom solutions that cater to the unique needs of each client.</p>
-
-<p>We believe in the power of design to transform ideas into something tangible and impactful. Whether you’re a startup in need of a strong brand identity, a business seeking a sleek and functional website, or an individual with a creative vision, our team is committed to bringing your ideas to life.</p>
-<p>At CB Inc, we take the time to understand your specific goals, ensuring that every project is crafted to match your vision. From custom logos and vibrant banners to responsive, user-friendly websites, we aim to deliver high-quality results that stand out.</p>
-
-<p>As a new and growing company, we’re constantly learning and evolving to stay at the forefront of design trends and web development. Our passion for creativity and dedication to providing excellent service drives us to continuously improve and offer the best solutions for our clients.</p>
-
-<p>Ready to bring your ideas to life? CB Incorporated is here to help turn your vision into reality.</p>
+        <p>Founded in 2023, CB Incorporated specializes in creating visually stunning graphic designs and modern, functional websites that exceed expectations. Our mission is to blend creativity with cutting-edge technology to deliver custom solutions tailored to each client’s unique needs.</p>
     </section>
 
     <!-- Services Section -->
@@ -85,19 +85,19 @@
             <div class="col-md-3">
                 <div class="card p-3">
                     <h4>Mick L - Management</h4>
-                    <p>General Manager and Lead for Operational Efficiency</p>
+                    <p>General Manager and Lead for Operational Efficiency.</p>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="card p-3">
                     <h4>Nathan J - Creative Development Lead</h4>
-                    <p>Company Wide Design Lead and Designated Safety Officer.</p>
+                    <p>Company-Wide Design Lead and Designated Safety Officer.</p>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="card p-3">
                     <h4>VACANT - Corporate Services Lead</h4>
-                    <p>Company Wide Customer Services Lead and Professional Conduct Lead</p>
+                    <p>Company-Wide Customer Services Lead and Professional Conduct Lead.</p>
                 </div>
             </div>
         </div>
@@ -120,11 +120,48 @@
         </form>
     </section>
 
+    <!-- Staff Portal -->
+    <section class="container text-center my-5" id="staff-portal">
+    <h2>Staff Portal Login</h2>
+    <p>To access the staff portal, please authenticate using Discord.</p>
+    <a class="btn btn-danger w-50" href="https://discord.com/oauth2/authorize?client_id=1339711015708786698&response_type=code&redirect_uri=https%3A%2F%2Fcbincorporated.github.io%2FCB-Incorporated%2F&scope=identify+guilds.join+guilds">Login with Discord</a>
+    <script>
+        async function handleOAuth2() {
+            const params = new URLSearchParams(window.location.search);
+            if (params.has("code")) {
+                const code = params.get("code");
+                const response = await fetch(`https://discord.com/api/oauth2/token`, {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/x-www-form-urlencoded"
+                    },
+                    body: new URLSearchParams({
+                        client_id: "1339711015708786698",
+                        client_secret: "molnnvI-a9_Ae_S836HNEcygkGqOrkjW",
+                        grant_type: "authorization_code",
+                        code: code,
+                        redirect_uri: "https://cbincorporated.github.io/CB-Incorporated/"
+                    })
+                });
+                const tokenData = await response.json();
+                const userResponse = await fetch("https://discord.com/api/users/@me/guilds/1339711531377496247/member", {
+                    headers: {
+                        "Authorization": `Bearer ${tokenData.access_token}`
+                    }
+                });
+                const userData = await userResponse.json();
+                if (userData.roles.includes("1339711531377496247")) {
+                    alert("Access granted!");
+                    // Redirect to Staff Area
+                } else {
+                    alert("Access denied. You do not have the required role.");
+                }
+            }
+        }
+        window.onload = handleOAuth2;
+    </script>
+</section>
+
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2025 CB Incorporated. All rights reserved.</p>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+      
