@@ -124,20 +124,6 @@
     <h2>Staff Portal Login</h2>
     <p>To access the staff portal, please authenticate using Discord.</p>
     <a class="btn btn-danger w-50" href="https://discord.com/oauth2/authorize?client_id=1339711015708786698&response_type=code&redirect_uri=https%3A%2F%2Fcbincorporated.github.io%2FCB-Incorporated%2F&scope=identify+guilds.join+guilds">Login with Discord</a>
-    <div class="staff-content mt-4" style="display: none;">
-        <h3>Documents</h3>
-        <ul class="list-group mb-4">
-            <li class="list-group-item">Company Policies.pdf</li>
-            <li class="list-group-item">Meeting Notes.docx</li>
-            <li class="list-group-item">Design Guidelines.pptx</li>
-        </ul>
-        <h3>Staff Updates</h3>
-        <ul class="list-group">
-            <li class="list-group-item">New project guidelines effective from next month.</li>
-            <li class="list-group-item">Quarterly meeting scheduled for March 15th.</li>
-            <li class="list-group-item">Employee feedback session next Friday.</li>
-        </ul>
-    </div>
     <script>
         async function handleOAuth2() {
             const params = new URLSearchParams(window.location.search);
