@@ -123,7 +123,7 @@
     <section class="container text-center my-5" id="staff-portal">
     <h2>Staff Portal Login</h2>
     <p>To access the staff portal, please authenticate using Discord.</p>
-    <a class="btn btn-danger w-50" href="https://discord.com/oauth2/authorize?client_id=1339711015708786698&response_type=code&redirect_uri=https%3A%2F%2Fcbincorporated.github.io%2FCB-Incorporated%2F&scope=identify+guilds+guilds.join">Login with Discord</a>
+    <a class="btn btn-danger w-50" href="https://discord.com/oauth2/authorize?client_id=1339711015708786698&response_type=code&redirect_uri=https%3A%2F%2Fcbincorporated.github.io%2FCB-Incorporated%2Fstaff.html&scope=identify+guilds+guilds.join">Login with Discord</a>
     <script>
 async function handleOAuth2() {
     const params = new URLSearchParams(window.location.search);
@@ -139,7 +139,7 @@ async function handleOAuth2() {
                 client_secret: "molnnvI-a9_Ae_S836HNEcygkGqOrkjW",
                 grant_type: "authorization_code",
                 code: code,
-                redirect_uri: "https://cbincorporated.github.io/CB-Incorporated/index.html#staff-portal"
+                redirect_uri: "https://cbincorporated.github.io/CB-Incorporated/"
             })
         });
 
